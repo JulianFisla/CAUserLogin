@@ -7,6 +7,10 @@ import entity.User;
  */
 public interface LoginUserDataAccessInterface {
 
+    /**
+     * Retrieves the username of the currently logged-in user.
+     * @return the username of the current user, or null if no user is logged in
+     */
     String getCurrentUser();
 
     /**
@@ -32,7 +36,6 @@ public interface LoginUserDataAccessInterface {
     /**
      * Returns the user with the given username.
      * @param name the username to look up
-     * @return the user with the given username
      */
     void setCurrentUser(String name);
 
